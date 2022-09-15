@@ -1,0 +1,21 @@
+/* Fonts Form Google Font ::- https://fonts.google.com/  -:: */
+@import url("https://fonts.googleapis.com/css?family=Abel|Abril+Fatface|Alegreya|Arima+Madurai|Dancing+Script|Dosis|Merriweather|Oleo+Script|Overlock|PT+Serif|Pacifico|Playball|Playfair+Display|Share|Unica+One|Vibur");
+/* End Fonts */
+/* Start Global rules */
+* {
+  /* padding: 0;
+  margin: 0; */
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+/* End Global rules */
+
+/* Start body rules */
+body {
+  background-color: #048b9a;
+  font-family: "Vibur", cursive;
+  /*   the main font */
+  font-family: "Abel", sans-serif;
+  opacity: 0.95;
+}
