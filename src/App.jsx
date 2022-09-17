@@ -5,6 +5,7 @@ import Accueil from "./views/Accueil";
 import Liste from "./views/Liste";
 import Profil from "./views/Profil";
 import Ajout from "./views/Ajout";
+import { withAuth } from "./services/Services";
 
 const App = () => {
   return (
@@ -21,4 +22,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default withAuth(App);

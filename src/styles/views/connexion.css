@@ -1,12 +1,12 @@
 .formulaire-connexion form {
   width: 450px;
-  min-height: 500px;
+  min-height: 400px;
   height: auto;
   border-radius: 5px;
-  margin: 2% auto;
+  margin: 50px auto;
   box-shadow: 0 9px 50px hsla(20, 67%, 75%, 0.31);
   padding: 2%;
-  background: #e3fdf5;
+  background: #03becb76;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
     rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
@@ -40,7 +40,7 @@
 
 .input-item {
   background: #fff;
-  color: #333;
+  color: #231e39;
   padding: 14.5px 0px 15px 9px;
   border-radius: 5px 0px 0px 5px;
 }
@@ -48,7 +48,7 @@
 /* Show/hide password Font Icon */
 #eye {
   background: #fff;
-  color: #333;
+  color: #231e39;
 
   margin: 5.9px 0 0 0;
   margin-left: -20px;
@@ -94,6 +94,8 @@
 /* input[type="text"]  */
 /* buttons  */
 .formulaire-connexion button {
+  display: flex;
+  align-items: center;
   color: #252537;
   width: 180px;
   height: 50px;

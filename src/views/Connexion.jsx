@@ -1,20 +1,22 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import Navigation from "../components/Navigation";
 import { login } from "../services/Services";
 import "../styles/views/connexion.css";
 
 const Connexion = () => {
   const [formData, setFormData] = useState({});
-  const navigate = useNavigate();
+  //const navigate = useNavigate();
 
   function submitForm(event) {
     event.preventDefault();
 
     // utiliser le service pour se connecter à l'api
-    login(formData.email, formData.password).then(() => {
-      navigate("/liste");
-    });
+    login(formData.email, formData.password);
+
+    // .then(() => {
+    //   navigate("/liste");
+    // });
   }
 
   // récupérer input email et password
@@ -29,7 +31,7 @@ const Connexion = () => {
     <div>
       <Navigation />
       <div className="formulaire-connexion">
-        <pre>{JSON.stringify(formData, null, 2)}</pre>
+        {/* <pre>{JSON.stringify(formData, null, 2)}</pre> */}
 
         <form onSubmit={submitForm}>
           <div className="con">

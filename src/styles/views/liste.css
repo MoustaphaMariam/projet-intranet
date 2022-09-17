@@ -1,69 +1,80 @@
-/* #searchForm {
+.form {
   display: flex;
-  padding: 35px 0;
-  border-radius: 5px;
-  margin: auto;
+  flex-wrap: wrap;
 }
-
-.form .search {
-  position: relative;
-  height: 45px;
-  margin: auto 5px;
+.form div {
+  margin: auto;
+  width: 400px;
+  align-items: center;
+  justify-content: center;
   display: flex;
 }
 
 .form .search input {
-  background-color: #ffffff9c;
-  border-left: 2px solid #eff0f9;
-  border-top: 2px solid #eff0f9;
-  border-bottom: 2px solid #eff0f9;
-  border-right: inherit;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
+  background-color: rgba(128, 128, 128, 0.6);
+  border: 2px solid #eff0f9;
+  border-radius: 5px;
   padding: 5px;
-  width: 120px;
+  outline: none;
+  height: 47px;
+  width: 100%;
+}
+.form .search input:focus {
+  font-size: 1rem;
+}
+.form .search ::placeholder {
+  color: #333;
+  padding: 20px;
+  font-size: 1rem;
 }
 
 .form .dropdown {
   border-radius: 5px;
-  width: 100px;
   padding: 5px;
 }
 
-.form .dropdown select {
-  border: 2px solid #eff0f9;
-  border-radius: 5px;
-  max-width: 150px;
-  height: 47px;
-  background-color: #ffffff9c;
-  text-align: center;
-}
-
-.form .search button {
-  width: 50px;
-  height: 45px;
-  border: 0;
-  background: rgb(179, 31, 179);
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-  color: #b891ab;
-  cursor: pointer;
-  border: 0px;
-}
-
-.form .search button:hover {
-  background: #ce8ace;
-  border-color: #ce8ace;
-}
-
 .dropdown select {
+  background-color: #ffffffb0;
   border: 2px solid #eff0f9;
   height: 45px;
-  padding: 10px 10px 10px 10px;
+  padding: 10px;
   border-radius: 5px;
   color: #0000008f;
   cursor: pointer;
+  width: 200px;
   border: 0;
   outline: none;
   text-align: center;
-} */
+  font-size: 1.1rem;
+}
+.dropdown select option {
+  background: turquoise;
+  font-size: 1rem;
+}
+.dropdown select option:hover {
+  border: 5px solid black;
+}
+
+.card-collabs {
+  display: flex;
+  flex-wrap: wrap;
+  width: 95%;
+  margin: auto;
+}
+.form {
+  font-size: 1.2rem;
+  display: flex;
+  padding: 35px 0;
+  border-radius: 5px;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  justify-content: center;
+}
+
+.list-title {
+  margin: auto;
+  width: 80%;
+  justify-content: center;
+  display: flex;
+}

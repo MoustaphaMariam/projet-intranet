@@ -1,11 +1,14 @@
 import React from "react";
 import Navigation from "../components/Navigation";
 import "../styles/views/profil.css";
+import { useSelector } from "react-redux";
 
 const Profil = () => {
+  const { userInfo } = useSelector((state) => state.user);
   return (
     <div>
       <Navigation />
+      <h1 className="add-title">Profil {userInfo.firstname}</h1>
       <div>
         <form className="formulaire-profil">
           <label htmlFor="gender">Civilité</label>
@@ -19,7 +22,9 @@ const Profil = () => {
             <option value="client">Client</option>
             <option value="tecnique">Technique</option>
           </select>
-          <label htmlFor="firstname">Nom</label>
+          <label htmlFor="firstname" value={userInfo.firstname}>
+            Nom
+          </label>
           <input
             type="text"
             id="firstname"
@@ -61,7 +66,7 @@ const Profil = () => {
           <label htmlFor="birthday">Birthday</label>
           <input type="date" id="birthday" name="birthday" />
 
-          <label hFtmFor="phone">*Telephone</label>
+          <label htmlFor="phone">*Telephone</label>
           <input
             type="tel"
             id="phone"
